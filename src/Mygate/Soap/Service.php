@@ -1,6 +1,6 @@
 <?php
 
-    namespace CodeChap\Soap;
+    namespace CodeChap\Mygate\Soap;
 
     class Service
     {
@@ -20,7 +20,7 @@
             );
 
             // Process result and show errors
-            $result = \Mygate\Helpers\Terminal::process_results($request, true);
+            $result = \CodeChap\Mygate\Helpers\Terminal::process_results($request, true);
 
             // Record found
             if($result){
@@ -51,7 +51,7 @@
             );
 
             // Process result and show errors
-            $result = \Mygate\Helpers\Terminal::process_results($request);
+            $result = \CodeChap\Mygate\Helpers\Terminal::process_results($request);
 
             // Return it
             return true;
@@ -73,7 +73,7 @@
             );
 
             // Process result and show errors
-            $result = \Mygate\Helpers\Terminal::process_results($request);
+            $result = \CodeChap\Mygate\Helpers\Terminal::process_results($request);
 
             // Done
             return true;
@@ -103,12 +103,12 @@
                 '0', // On budget
                 '', // Budget period
                 '', // UCI 
-                \Mygate\Helpers\Client::get_ip(),
+                \CodeChap\Mygate\Helpers\Client::get_ip(),
                 '' // Shipping Country Code
             );
 
             // Process result and show errors
-            $result = \Mygate\Helpers\Terminal::process_results($request);
+            $result = \CodeChap\Mygate\Helpers\Terminal::process_results($request);
 
             // Return it
             return $result['transactionindex'];

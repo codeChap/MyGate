@@ -1,6 +1,6 @@
 <?php
 
-    namespace CodeChap\Soap;
+    namespace CodeChap\Mygate\Soap;
 
     /**
      * MyGate SOAP Integration
@@ -18,23 +18,23 @@
             
             // Execute
             $request = $client->tokenlookup(
-                $connection->get_config('merchant_id'),             // Merchant ID
-                $connection->get_config('app_id'),                  // Application ID
-                $connection->get_config('mode'),                    // Mode
-                $connection->card->token,                           // Tokenised token
-                $connection->payment->amount,                       // Amount to be paid
-                \Mygate\Helpers\Client::get_http_user_agent(),      // Http user agent
-                \Mygate\Helpers\Client::get_http_accept(),          // Http accept
-                'merchant reference',                               // Reference
-                'merchant description',                             // Description
-                'N',                                                // Is the transaction recurring
-                '',                                                 // The recurring frequency
-                '',                                                 // Last debit date
-                ''                                                  // Amount of months the recurring debits will continue
+                $connection->get_config('merchant_id'),                     // Merchant ID
+                $connection->get_config('app_id'),                          // Application ID
+                $connection->get_config('mode'),                            // Mode
+                $connection->card->token,                                   // Tokenised token
+                $connection->payment->amount,                               // Amount to be paid
+                \CodeChap\Mygate\Helpers\Client::get_http_user_agent(),      // Http user agent
+                \CodeChap\Mygate\Helpers\Client::get_http_accept(),          // Http accept
+                'merchant reference',                                       // Reference
+                'merchant description',                                     // Description
+                'N',                                                        // Is the transaction recurring
+                '',                                                         // The recurring frequency
+                '',                                                         // Last debit date
+                ''                                                          // Amount of months the recurring debits will continue
             );
 
             // Find results
-            $results = \Mygate\Helpers\Terminal::process_results($request, true);
+            $results = \CodeChap\Mygate\Helpers\Terminal::process_results($request, true);
 
             // If enrolled, we must verify
             if(isset($results['enrolled']) and $results['enrolled'] == 'Y'){

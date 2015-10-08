@@ -1,6 +1,6 @@
 <?php
 
-    namespace CodeChap\Helpers;
+    namespace CodeChap\Mygate\Helpers;
 
     class Terminal
     {

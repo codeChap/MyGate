@@ -1,6 +1,6 @@
 <?php
 
-    namespace CodeChap;
+    namespace CodeChap\Mygate;
 
     /**
      * MyGate SOAP Integration
