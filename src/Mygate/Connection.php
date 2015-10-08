@@ -3,7 +3,7 @@
     /**
      * Set namespace
      */
-    namespace Mygate;
+    namespace CodeChap;
 
     /**
      * MyGate SOAP Integration

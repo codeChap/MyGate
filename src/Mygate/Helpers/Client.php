@@ -1,6 +1,6 @@
 <?php
 
-    namespace Mygate\Helpers;
+    namespace CodeChap\Helpers;
 
     class Client
     {
