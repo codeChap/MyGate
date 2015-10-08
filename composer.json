@@ -20,7 +20,7 @@
     },
     "autoload": {
         "psr-4": {
-            "CodeChap\\Mygate": "src/Mygate/"
+            "CodeChap\\Mygate\\": "src/Mygate/"
         }
     }
 }
