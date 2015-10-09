@@ -62,7 +62,7 @@
             $this->config = $config + $this->config;
 
             // Bring in URLs
-            $urls = require_once("resources".DIRECTORY_SEPARATOR."Urls.php");
+            $urls = require_once("Resources".DIRECTORY_SEPARATOR."Urls.php");
 
             // Append URLS
             switch($this->config['mode']){
