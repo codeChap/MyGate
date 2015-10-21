@@ -175,7 +175,7 @@
              * Step 1.
              * Check if a user has enrolled for 3D Secure.
              */
-            if($results = Soap\Threed::tokenlookup($this)){
+            if($results = \CodeChap\Mygate\Soap\Threed::tokenlookup($this)){
 
                 // Find return URL
                 $return_url = 'http' . (isset($_SERVER['HTTPS']) ? 's' : '') . '://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];

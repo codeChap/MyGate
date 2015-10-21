@@ -1,12 +1,12 @@
 {
     "name": "codechap/mygate",
     "description": "PHP integration for mygate.co.za",
-    "keywords": ["mygate", "pay"],
+    "keywords": ["mygate"],
     "homepage": "https://github.com/codechap/mygate",
     "license": "MIT",
     "authors": [
         {
-            "name": "Derrick Egersdorfer",
+            "name": "CodeChap",
             "email": "hello@codechap.com",
             "role": "Developer"
         }
