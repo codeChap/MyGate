@@ -40,7 +40,7 @@
                 }
 
                 // One up
-                $path = realpath(__DIR__.'/../resources/Codes.php');
+                $path = realpath(__DIR__.'/../Resources/Codes.php');
 
                 // Bring in Error codes
                 $codes = require_once($path);
