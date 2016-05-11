@@ -22,8 +22,8 @@
                 $connection->get_config('mode'),                            // Mode
                 $connection->card->token,                                   // Tokenised token
                 $connection->payment->amount,                               // Amount to be paid
-                \CodeChap\Mygate\Helpers\Client::get_http_user_agent(),      // Http user agent
-                \CodeChap\Mygate\Helpers\Client::get_http_accept(),          // Http accept
+                \CodeChap\Mygate\Helpers\Client::get_http_user_agent(),     // Http user agent
+                \CodeChap\Mygate\Helpers\Client::get_http_accept(),         // Http accept
                 'merchant reference',                                       // Reference
                 'merchant description',                                     // Description
                 'N',                                                        // Is the transaction recurring

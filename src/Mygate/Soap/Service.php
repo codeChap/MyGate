@@ -103,7 +103,7 @@
                 '0', // On budget
                 '', // Budget period
                 '', // UCI 
-                \CodeChap\Mygate\Helpers\Client::get_ip(),
+                '', //\CodeChap\Mygate\Helpers\Client::get_ip(),
                 '' // Shipping Country Code
             );
 
